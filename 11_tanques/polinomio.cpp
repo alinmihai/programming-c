@@ -1,25 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 50
-
-void pol(){
-    for (int i=0; i < MAX; i ++)
-
-}
-
-bool pregunta(
+#define MAX 20
 
 int main (int argc, char *argv[]){
 
     double pol[MAX];
-    double x;
-
-    for (int i=0; i<MAX; i++)
-        scanf(" %i", pol[i]);
+    double x, grado;
+    double resultado = 0;
+    double potencia = 1;
 
     printf("Dale un valor a la X: ");
     scanf(" %lf", &x);
+
+    printf("Indica de que grado es el polinomio: ");
+    scanf(" %lf", &grado);
+
+    printf("Introduce los coeficientes del polinomio: ");
+
+    for (int i = 0; i <= grado; i++);
+    scanf(" %lf", &pol[i]);
+
+    for (int pos = 0; pos <= grado; pos++, potencia *= x)
+        resultado +=
 
 	return EXIT_SUCCESS;
 }
