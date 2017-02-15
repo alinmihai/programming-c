@@ -22,7 +22,9 @@ int main (int argc, char *argv[]){
     scanf(" %lf", &pol[i]);
 
     for (int pos = 0; pos <= grado; pos++, potencia *= x)
-        resultado +=
+        resultado += pol[pos] * potencia;
+
+    printf("El resultado es: %.2lf", resultado);
 
 	return EXIT_SUCCESS;
 }
