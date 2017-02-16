@@ -10,7 +10,7 @@ int main (int argc, char *argv[]){
     double resultado = 0;
     double potencia = 1;
 
-    printf("Dale un valor a la X: ");
+    printf("Dale un valor a la x: ");
     scanf(" %lf", &x);
 
     printf("Indica de que grado es el polinomio: ");
@@ -18,13 +18,15 @@ int main (int argc, char *argv[]){
 
     printf("Introduce los coeficientes del polinomio: ");
 
-    for (int i = 0; i <= grado; i++);
+    for (int i = 0; i <= grado; i++)
     scanf(" %lf", &pol[i]);
 
     for (int pos = 0; pos <= grado; pos++, potencia *= x)
         resultado += pol[pos] * potencia;
 
     printf("El resultado es: %.2lf", resultado);
+
+    printf("\n\n");
 
 	return EXIT_SUCCESS;
 }
