@@ -14,3 +14,11 @@ $(TARGET): $(OBJS)
 
 %.o: %.cpp $(DEPS)
 	$(CC) -c $<
+
+.PHONY: clean dist
+
+clean:
+	$(RM) *.o
+
+dist : clean
+	mv $(TARGET) $(DDIR)
