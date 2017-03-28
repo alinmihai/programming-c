@@ -14,7 +14,7 @@ int main (int argc, char *argv[]){
     printf("Introduzca las velocidades de X e Y: ");
     scanf(" %lf %lf", &vx, &vy);
 
-    for(double i=0; i<MAXT; i++){
+    for(double i=0; i<MAXT; i+=DELTA){
         printf("\n\tX: %.2lf", vx += ax * DELTA);
         printf("\tY: %.2lf", vy += ay * DELTA);
     }
