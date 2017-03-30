@@ -15,7 +15,7 @@ int main (int argc, char *argv[]){
         push(&estudiantes, &notas);
     }
 
-    printf("Ultimas 3 nota: %.2lf -> %.2lf -> %.2lf", pop(&estudiantes), pop(&estudiantes), pop(&estudiantes));
+    printf("Ultimas 3 notas: %.2lf -> %.2lf -> %.2lf", pop(&estudiantes), pop(&estudiantes), pop(&estudiantes));
 
     printf("\n\n");
 
