@@ -3,37 +3,36 @@
 
 #include "general.h"
 #include "io.h"
+#include "algorithms.h"
 
-int
-is_empty (int row, int col, char board[SIZE][SIZE])
-{
-    ;
-}
-
-int
-tower_check (int row, int col, char board[SIZE][SIZE])
-{
-    ;
-}
 
 int
 main (int argc, char *argv[])
 {
-    char chess_board[SIZE][SIZE];
-    int row, col;
+  char chess_board[SIZE][SIZE];
+  int row, col;
 
-    do
+  do
     {
-        loard (BOARD_FN, chess_board);
-        dump (chess_board);
-        do
-        {
-            ask_coordinates (&row, &col, "torre");
-        }
-        while (!is_empty (row, col, chess_board));
-        tower_check (row, col, chess_board);
+      load (BOARD_FN, chess_board);
+      title ("chess");
+      dump (chess_board);
+      do
+	{
+	  /* ask_coordinates (&row, &col, "Torre"); */
+          ask_coordinates (&row, &col, "Alfil");
+	}
+      while (!good_coordinates (row, col) ||
+	     !is_empty (row, col, chess_board));
+      print_piece ('A', row, col);
+      /* print_piece ('T', row, col); */
+      /* tower_check (row, col, chess_board); */
+      alfil_check (row, col, chess_board);
     }
-    while (repeat());
+  while (repeat ());
 
-	return EXIT_SUCCESS;
+  MOVE(EXIT_LIN, 1);
+
+  return EXIT_SUCCESS;
 }
+

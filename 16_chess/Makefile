@@ -1,11 +1,12 @@
-C = cc
+CC = cc
 
 CFLAGS = -g
+LDLIBS = 
 
 DEPS = $(wildcard *.h)
-OBJS = $(patsubst %.0, %.c, $(wildcard *.c))
+OBJS = $(patsubst %.o, %.c, $(wildcard *.c))
 
-EXE = chess
+EXE  = chess
 
 all: $(EXE) clean
 
@@ -18,4 +19,4 @@ $(EXE): $(OBJS) $(DEPS)
 .PHONY: clean
 
 clean:
-	$(RM) *.o
+	$(RM) *.o *~
