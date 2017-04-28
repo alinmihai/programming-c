@@ -22,7 +22,7 @@ check_direction (int row, int col, struct TVector dir, char board[SIZE][SIZE])
 }
 
 int
-alfil_check (int row, int col, char board[SIZE][SIZE])
+bishop_check (int row, int col, char board[SIZE][SIZE])
 {
     struct TVector dir;
 
@@ -49,7 +49,7 @@ alfil_check (int row, int col, char board[SIZE][SIZE])
 }
 
 /* int
-tower_check (int row, int col, char board[SIZE][SIZE])
+rook_check (int row, int col, char board[SIZE][SIZE])
 {
   //int offs;
   struct TVector dir;

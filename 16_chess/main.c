@@ -24,10 +24,10 @@ main (int argc, char *argv[])
 	}
       while (!good_coordinates (row, col) ||
 	     !is_empty (row, col, chess_board));
-      print_piece ('A', row, col);
-      /* print_piece ('T', row, col); */
-      /* tower_check (row, col, chess_board); */
-      alfil_check (row, col, chess_board);
+      print_piece ('B', row, col);
+      /* print_piece ('R', row, col); */
+      /* Rook_check (row, col, chess_board); */
+      bishop_check (row, col, chess_board);
     }
   while (repeat ());
 

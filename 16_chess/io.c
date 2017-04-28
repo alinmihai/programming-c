@@ -114,20 +114,6 @@ ask_coordinates (int *y, int *x, const char *name)
     (*x)--;
 }
 
-/* void
-ask_coordinates (int *y, int *x, const char *name)
-{
-  prepare_win (PROMPT_LIN);
-  printf (BOLD_ON "[%s. Posición]" BOLD_OFF "\n", name);
-  ANSI_SWITCH_COLOR (AC_GREEN, FORE_NORMAL);
-  printf ("  fila, columna: ");
-  ANSI_SWITCH_COLOR (AC_GREEN, FORE_LIGHT);
-  scanf ("%i %*[,] %i", y, x);
-  ANSI_COLOR_RESET;
-  (*y)--;
-  (*x)--;
-} */
-
 int
 repeat (void)
 {

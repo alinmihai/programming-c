@@ -12,12 +12,13 @@ struct TVector {
 
 
 #ifdef __cplusplus
-extern "C" 
+extern "C"
 {
 #endif
 
 int is_empty (int row, int col, char board[SIZE][SIZE]);
-int tower_check (int row, int col, char board[SIZE][SIZE]);
+/* int rook_check (int row, int col, char board[SIZE][SIZE]); */
+int bishop_check (int row, int col, char board[SIZE][SIZE]);
 
 #ifdef __cplusplus
 }
